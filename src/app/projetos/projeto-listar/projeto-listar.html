@@ -1,0 +1,22 @@
+<h1>Projetos</h1>
+
+<a routerLink="/projetos/cadastrar">Cadastrar Projeto</a>
+
+<span> Qtd projetos: <span>{{projetos().lenght}}</span></span>
+
+<table>
+    <thead>
+        <th>Nome</th>
+        <th>Código do projeto</th>
+        <th>Custo estimado</th>
+        <th></th>
+    </thead>
+    <tbody>
+        @for(projeto of projetos(); track projeto.id){
+
+            <tr>
+                <td>{{projeto.nome}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
