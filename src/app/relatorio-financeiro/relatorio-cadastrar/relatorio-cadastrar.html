@@ -1,0 +1,18 @@
+<h1> Criar Relatório </h1>
+
+<label for="titulo">Título</label>
+<input type="text" [(ngModel)]="relatorio().titulo" id="titulo" placeholder="Digite o título do relatório">
+
+<label for="tipo">Tipo</label>
+<input type="text" [(ngModel)]="relatorio().tipo" id="tipo" placeholder="Digite o tipo do relatório">
+
+<label for="valorTotal">Valor total</label>
+<input type="number" [(ngModel)]="relatorio().valorTotal" id="valorTotal" placeholder="Digite o valor total do relatório">
+
+<label for="dataEmissao">Data emissão</label>
+<input type="date" [(ngModel)]="relatorio().dataEmissao" id="dataEmissao" placeholder="Selecione a data de emissão">
+
+<label for="responsavel">Responsável</label>
+<input type="text" [(ngModel)]="relatorio().responsavel" id="responsavel" placeholder="Digite o nome do responsável do relatório">
+
+<button (click)="salvar()">Salvar</button>
